@@ -1,0 +1,13 @@
+# http://stackoverflow.com/questions/36372446/what-should-be-the-best-gitignore-for-grails3-1-x
+*.iml
+*.ipr
+*.iws
+.idea
+
+.gradle
+.asscache
+build
+out
+logs
+classes
+
