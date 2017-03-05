@@ -37,7 +37,13 @@
         <div class="form-group">
           <label for="weight" class="col-sm-2 control-label">体重</label>
           <div class="col-sm-10">
-            <g:textField name="weight" class="form-control"/>
+            <g:field type="number" name="weight" class="form-control" step="0.1" required="true"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="bodyFatPercentage" class="col-sm-2 control-label">体脂肪率</label>
+          <div class="col-sm-10">
+            <g:field type="number" name="bodyFatPercentage" class="form-control" step="0.1"/>
           </div>
         </div>
         <div class="form-group">
