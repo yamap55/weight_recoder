@@ -5,6 +5,8 @@ class Status {
   double bodyFatPercentage
   Date dateCreated
   Date lastUpdated
+  User user
+  Date checkDate
 
   static constraints = {
   }

@@ -13,25 +13,21 @@
   <body>
     <div class="container">
       <h1>Weight Recoder</h1>
-      <g:form controller="index" action="save" class="form-horizontal">
+      <g:form controller="home" action="save" class="form-horizontal">
         <div class="form-group">
           <label for="name" class="col-sm-2 control-label">名前</label>
           <div class="col-sm-10">
-            <label class="radio-inline">
-              <input type="radio" name="name" id="name1" value="1"> 1人目
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="name" id="name2" value="2"> 2人目
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="name" id="name3" value="3"> 3人目
-            </label>
+            <g:radioGroup name="user" values="${users.collect{it.id}}" labels="${users.collect{it.name}}" required="true">
+              <label class="radio-inline">
+                ${it.radio} ${it.label}
+              </label>
+            </g:radioGroup>
           </div>
         </div>
         <div class="form-group">
           <label for="checkDate" class="col-sm-2 control-label">日付</label>
           <div class="col-sm-10">
-            <input id="checkDate" class="flatpickr form-control" type="text" value="${(new Date().format("HH") < "04" ? (new Date() -1) : new Date()).format("yyyy/MM/dd")}">
+            <g:textField name="checkDate" class="flatpickr form-control" value="${(new Date().format("HH") < "04" ? (new Date() -1) : new Date()).format("yyyy/MM/dd")}" />
           </div>
         </div>
         <div class="form-group">
