@@ -50,7 +50,7 @@
       </g:form>
     </div>
     <script type="text/javascript">
-      flatpickr(".flatpickr");
+      flatpickr(".flatpickr",{dateFormat : "Y/m/d"});
     </script>
   </body>
 </html>
