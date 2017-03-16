@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Weight Recoder</title>
-    <link rel="stylesheet" href="//unpkg.com/flatpickr/dist/flatpickr.min.css">
     <asset:stylesheet href="bootstrap.css" />
+    <asset:stylesheet href="flatpickr.min.css" />
     <asset:javascript src="jquery-2.2.0.min.js" />
     <asset:javascript src="application.js" />
     <asset:javascript src="bootstrap.js" />
-    <script src="//unpkg.com/flatpickr"></script>
+    <asset:javascript src="flatpickr.min.js" />
   </head>
   <body>
     <div class="container">
